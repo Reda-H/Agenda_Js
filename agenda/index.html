@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h1> Agenda </h1>
+    <div class="main_agenda">
+
+      <input
+        type="text"
+        name="entry"
+        id="textEntry"
+        onclick=clickOnInput()
+        value="Enter Something">
+
+      <button
+        type="button"
+        name="addEntry"
+        id="btnEntry"
+        onclick="addButton('textEntry')">
+          Add
+      </button>
+
+      <div id="list">
+        <ul>
+        </ul>
+      </div>
+    </div>
+    <button type="button" name="button" id='btnDone' onclick=doneClick()>Done</button>
+  </body>
+</html>
